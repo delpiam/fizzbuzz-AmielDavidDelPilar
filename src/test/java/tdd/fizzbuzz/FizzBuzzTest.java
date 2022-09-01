@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
     @Test
-    void should_return_true_when_count_off_given_number_1() {
+    void should_return_1_when_count_off_given_number_1() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
         String expected = "1";
@@ -17,4 +17,18 @@ public class FizzBuzzTest {
         //then
         assertEquals(expected, actual);
     }
+
+    @Test
+    void should_return_Fizz_when_count_off_given_number_3() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String expected = "Fizz";
+
+        //when
+        String actual = fizzBuzz.countOff(3);
+
+        //then
+        assertEquals(expected, actual);
+    }
+
 }
